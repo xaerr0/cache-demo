@@ -20,8 +20,8 @@ public class EmployeeService {
     EmployeeRepo employeeRepository;
 
 //    can be used to inspect the cache during debug
-    @Autowired
-CacheManager cacheManager;
+//    @Autowired
+//CacheManager cacheManager;
 
     @Cacheable
             (value = "employees", key = "#employeeId", sync = true)
